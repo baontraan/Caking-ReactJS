@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.customer-card{
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+}
+.customer-img{
+    width: 100px;
+    border-radius: 50px;
+    height: 100px;
+}
+.name, .job{
+    font-size: 15px;
+}
+
+@media (max-width: 768px){
+    .des-cus{
+        font-size: 15px;
+    }
+}
+@media (max-width: 335px) {
+    .job{
+        font-size: 13px;
+    }
+}

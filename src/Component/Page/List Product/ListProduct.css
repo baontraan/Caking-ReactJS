@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.banner4-title {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.banner4-view {
+    display: inline-block;
+    border: none;
+    font-size: 18px;
+    padding: 8px 20px;
+    background-color: #000000bf;
+    color: #fff;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.banner4-Image{
+    height: 600px;
+    object-fit: cover;
+}
+.hover{
+    cursor: pointer;
+}
+.hover i{
+    margin-top: 2px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.hover p{
+    color: #fff;
+    transition: 0.5s ease;
+}
+.hover:hover i, .hover:hover p{
+    color: #e4c590;
+}
+.cardCarousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.carouselWrapper {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.carouselWrapper img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.carouselWrapper img:hover {
+    transform: scale(1.1);
+    /* Zoom ảnh vào trong */
+}
+
+.cardCarouselTitle {
+    margin-top: 10px;
+    /* Khoảng cách giữa ảnh và tiêu đề */
+    font-weight: bold;
+    /* Tùy chỉnh kiểu chữ nếu muốn */
+}
+.box-product .filter{
+    border-bottom: 1px solid #80808080;
+    padding-bottom: 30px;
+}
+.box-product .filter, .box-product .filter .filterName{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.box-product .filter .filterName{
+    line-height: 1.35;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.box-product .filter input{
+    background-color: initial;
+    border: none;
+    outline: none;
+    width: 80%;
+}
+.box-product .categories{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.35;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.box-product .list-categories .cateWrapper{
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    justify-content: space-between;
+    letter-spacing: 0;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    transition: 0.2s ease;
+}
+.box-product .arrange .count{
+    display: flex;
+    padding: 10px ;
+    margin-bottom: 20px;
+}
+.box-product .arrange .sort{
+    cursor: pointer;
+    gap: 20px;
+    position: relative;
+    width: fit-content;
+    /* padding: 10px;
+    margin-bottom: 20px; */
+}
+.box-product .arrange .sort i{
+    position: absolute;
+    top: 5px;
+    right: -40px;
+}
+.box-product .arrange .sort .sorting{
+    background-color: #f5f5f5;
+    left: 0;
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    transition: .3s ease-out;
+    visibility: hidden;
+    width: 150%;
+    z-index: 99999;
+}
+.box-product .arrange .sort .sorting.active{
+    opacity: 1;
+    visibility: visible;
+    top: 40px;
+}
+.show-more {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(200, 200, 4);
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    font-weight: 600;
+    transition: 0.5s;
+    font-size: 12px;
+}
+.show-more:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(200, 200, 4);
+}
+
+
+@media (max-width: 768px){
+    .cardItem {
+    justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardItem {
+        justify-content: center;
+    }
+        .box-product .arrange .count {
+            font-size: 11px
+        }
+    
+        .box-product .arrange .sort {
+           font-size: 11px;
+        }
+}
+
+@media (max-width: 495px){
+    .carouselWrapper  {
+        width: 70px;
+        height: 70px;
+    }
+    .cardCarouselTitle{
+        font-size: 12px;
+    }
+   .box-product .arrange .count {
+       display: none;
+   }
+
+   .box-product .arrange .sort {
+       display: none;
+   }
+   .box-product .arrange .sort .sorting {
+       display: none;
+   }
+   .box-product .arrange .sort p {
+       display: none;
+   }
+   .box-product .arrange .sort i {
+       display: none;
+       opacity: 0;
+   }
+}

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.icon img{
+    width: 55px;
+}
+.quality{
+    background-color: #efefef;
+    color: #000000bf;
+    padding: 35px 24px;
+}
+.quality .quality-content .desc{
+    font-size: 14px;
+}
+
+@media (max-width: 991px){
+    .flex{
+        flex-wrap: wrap;
+    }
+    .left, .center, .right{
+        width: 100%;
+        margin: 10px 0;
+        justify-content: center;
+    }
+    .right{
+        margin-right: 103px;
+    }
+}

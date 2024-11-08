@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.link-home{
+    color: #666;
+    transition: 0.5s;
+}
+.link-home:hover{
+    color: #e4c590;
+}
+.cart{
+    color: #e4c590;
+}
+.thumb2 img{
+    width: 117px;
+}
+.quantity{
+    align-items: center;
+    border: 1px solid #e3e3e3;
+    justify-content: space-between;
+}
+.quantity button{
+    background-color: initial;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+.quantity input{
+    background-color: initial;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 auto;
+    outline: none;
+    padding: 13px 0;
+    text-align: center;
+    width: 50%;
+}
+.bill{
+    border: 6px solid #e3e3e3;
+    border-radius: 5px;
+    padding: 30px 30px 40px;
+    position: relative;
+    text-align: left;
+}
+.bill .total-product{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+}
+.bill .total-price{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+}
+.bill .check-out{
+    outline: none;
+    text-align: center;
+    margin-top: 30px;
+}
+.bill .check-out .proceed {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background-color: black;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, #c17d08 0%, #c17d08 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s linear;
+}
+.bill .check-out .proceed:hover {
+    background-size: 100% 100%;
+}
+
+.return{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: black;
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, #c17d08 0%, #c17d08 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s linear;
+}
+.return:hover{
+    background-size: 100% 100%;
+}
+.delete{
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+@media(max-width: 1200px){
+    .quantity input {
+        width: 30px;
+        
+}
+}
